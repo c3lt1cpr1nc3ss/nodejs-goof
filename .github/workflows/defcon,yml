@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   zap_scan:
+      permissions:
+        issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
